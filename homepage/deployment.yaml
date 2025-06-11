@@ -28,7 +28,7 @@ spec:
           imagePullPolicy: Always
           env:
             - name: HOMEPAGE_ALLOWED_HOSTS
-              value: ["home.williamalvarez.dev"]
+              value: "home.williamalvarez.dev"
           ports:
             - name: http
               containerPort: 3000
