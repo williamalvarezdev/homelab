@@ -15,7 +15,9 @@ spec:
           enabled: true
           adminPassword: "admin"  # Change this in production
           service:
-            type: LoadBalancer
+            type: ClusterIP
+          ingress:
+            enabled: false
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
